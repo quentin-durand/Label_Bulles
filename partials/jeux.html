@@ -1,0 +1,366 @@
+<h1 class="text-center text-danger" id="games">Jeux de société</h1>
+<div class="row">
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#wondersModals"><img src="Img/7Wonders.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>7 Wonders</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#wondersModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="wondersModals" tabindex="-1" role="dialog" aria-labelledby="wondersModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Prenez la tête d'une des grandes Cités du monde antique. Pour
+              l'emporter, développez vos relations commerciales et affirmez votre suprématie militaire.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[8].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[8].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[8].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/7Wonders.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[8])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#chabyrintheModals"><img src="Img/Chabyrinthe.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Chabyrinthe</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#chabyrintheModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="chabyrintheModals" tabindex="-1" role="dialog" aria-labelledby="chabyrintheModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Remettez un peu d'ordre dans ce dédale urbain en déplaçant ou en faisant
+              pivoter les gouttières, et créez un parcours sans obstacle pour permettre aux félins de trouver un toit accueillant. </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[9].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[9].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[9].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Chabyrinthe.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[9])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#dixitModals"><img src="Img/Dixit.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Dixit</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#dixitModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="dixitModals" tabindex="-1" role="dialog" aria-labelledby="dixitModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Entrez dans le monde poétique de Dixit. Faites marcher votre imagination
+              pour deviner ou faire deviner les magnifiques cartes illustrées par Marie Cardouat.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[10].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[10].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[10].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Dixit.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[10])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#CodeNamesModals"><img src="Img/CodeNames.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>CodesNames</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#CodeNamesModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="CodeNamesModals" tabindex="-1" role="dialog" aria-labelledby="CodeNamesModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Codenames est un jeu de langage et de déduction dans lequel s'affrontent
+              deux équipes d'espions.À leur tête, deux maîtres de l'espionnage rivaux sont les seuls à connaître les identités secrètes des 25 agents.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[11].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[11].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[11].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/CodeNames.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[11])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr style="height:2px; width:45%;" class="yellowLine">
+<div class="row mb-3">
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#limiteLimiteModals"><img src="Img/LimiteLimiteGold.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Limite Limite</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#limiteLimiteModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="limiteLimiteModals" tabindex="-1" role="dialog" aria-labelledby="limiteLimiteModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Le jeu que vous aurez honte d'aimer. Limite Limite est un jeu dont le
+              but est de créer les associations de cartes les plus drôles possibles.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-danger">
+            <thead>
+              <tr class="text-center text-dark">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[12].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[12].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[12].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/LimiteLimiteGold.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[12])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#monopolyGOTModals"><img src="Img/MonopolyGOT.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Monopoly GoT</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#monopolyGOTModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="monopolyGOTModals" tabindex="-1" role="dialog" aria-labelledby="monopolyGOTModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Affrontez les autres joueurs, tentez d'acquérir un maximum de lieux
+              phares de Westeros tels que Port-Réal, Winterfell ou encore Castral Roc, et mettez tous vos concurrent sur la paille ! </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[13].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[13].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[13].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/MonopolyGOT.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[13])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#mysteriumModals"><img src="Img/Mysterium.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Mysterium</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#mysteriumModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="mysteriumModals" tabindex="-1" role="dialog" aria-labelledby="mysteriumModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Mysterium est un jeu d’enquête coopératif dans lequel tous les joueurs
+              sont unis dans un même but : découvrir la vérité sur la mort du fantôme qui hante le manoir et lui apporter la paix !</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-danger">
+            <thead>
+              <tr class="text-center text-dark">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[14].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[14].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[14].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Mysterium.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[14])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#smallworldModals"><img src="Img/Smallworld.jpg" class="rezizeimg" /></a>
+      <p class="h4 mt-2 titleGame" id="titleBook"><b>Smallworld</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#smallworldModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="smallworldModals" tabindex="-1" role="dialog" aria-labelledby="smallworldModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGame">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGame text-dark" id="synopsis">Small World, le jeu de civilisations fantastiques et fantasques !
+              Dans Small World, les joueurs luttent pour conquérir les régions d'un monde où il n'y a pas de place pour tous !</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[15].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[15].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[15].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Smallworld.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[15])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

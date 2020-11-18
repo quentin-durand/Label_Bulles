@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" ng-app="myApp">
+
+<head>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+-->
+<script src="angular-1.8.0/angular-1.8.0/angular.min.js"></script>
+<script src="angular-1.8.0/angular-1.8.0/angular-route.js"></script>
+ 
+  <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link type="text/css"  href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Righteous" rel="stylesheet">
+  <link type="text/css"  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <title>Label bulles & Pile ou Face!</title>
+</head>
+
+<body>
+
+  <!--BANNIERE-->
+  <img src="Img/banniere3.png" id=fondecran class=fondecran alt= />
+  <!--FIN BANNIERE-->
+  <div class="row">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Navbar logo -->
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <!-- Listes déroulantes-->
+            <li class="nav-item"><a class=" nav-link" id="liste" href="#!/">Accueil</a></li>
+            <li class="nav-item"><a class=" nav-link" id="liste" href="#!/livre">Bd/Manga</a></li>
+            <li class="nav-item"><a class="nav-link" id="liste" href="#!/goodies">Goodies</a></li>
+            <li class="nav-item"><a class="nav-link" id="liste" href="#!/jeux">Jeux de société</a></li>
+
+
+          </ul>
+
+
+          <!--login-->
+          <button type="button" class="btn text-danger mb-2 mb-sm-0" id="btnlog" data-toggle="modal"
+            data-target="#exampleModalScrollable">
+            login
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title text-white " id="exampleModalScrollableTitle">LOGIN :</h1>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-white">
+                  <input class="name" type="text" placeholder="identifiant" id="login">
+                  <input class="password" type="text" placeholder="mot de passe" id="psw">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" id="close" data-dismiss="modal">Fermer</button>
+                  <button type="button" class="btn btn-danger" id="valid">Valider</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--fin login-->
+          <form class="form-inline">
+
+            <input class="form-control mr-lg-8 ml-0 ml-lg-1 mt-1 mt-lg-0" type="text" placeholder="Search"
+              aria-label="Search" id="Searchbtn">
+
+          </form>
+          <a id="btnModalsAcceuil" data-toggle="modal" data-target="#cartModals"><input type="image"
+              ng-click="cartModals()" img src="Img/panier.png" id="LogoPanier"></a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!--    Panier -->
+  <div class="modal fade" id="cartModals" tabindex="-1" role="dialog" aria-labelledby="cartModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-dark" id="exampleModalLabel"><b><u><br /></u></b><span
+              class="descritpionBook"></span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" ng-show="showCart">
+          <table class="mx-auto text-center">
+            <thead class="cartTableThead">
+              <tr class="mx-auto text-center">
+                <th></th>
+                <th class="p-2">Nom du produit</th>
+                <th class="p-2">Référence</th>
+                <th class="p-2">Prix</th>
+                <th class="p-2">Quantité</th>
+                <th class="p-2">Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in cart" class="mx-auto text-center cartTableThead">
+                <td><img class="w-50" src="{{item.image}}" /></td>
+                <td>{{item.name}}</td>
+                <td>{{item.ref}}</td>
+                <td>{{item.price}}€</td>
+                <td><input type="number" ng-model="item.qty" id="inputQty" class="qty" value="1" min="1"></td>
+                <td>{{item.price * item.qty | number : 2}}€</td>
+                <td><a type="button" ng-click="removeItem(removeItems)"><i class="fas fa-trash-alt mr-3"></i></a></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="3" class="text-center h5 mt-3 m-0">Montant de votre panier :</td>
+                <td class="text-center">{{totalPrice() | number:2}}€</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cartEmpty text-center mx-auto" ng-show="hideEmptyCart">
+          <i class="fas fa-comments-dollar fa-5x"></i>
+          <p class="h3">Votre panier est vide, merci d'aller dépenser votre argent!</p>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-success" ng-show="showCart" id="valid">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Fin Panier -->
+
+
+
+  <ng-view>
+    
+  </ng-view>
+
+
+
+
+  <footer>
+    <div class="row">
+      <div class="col-md-4 mb-md-0 mb-3 bg-danger" id="footer">
+        <hr class="text-center" id="bigsepafoot">
+        <iframe class="map-responsive center" id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.306428004008!2d0.11196525073096161!3d49.497607063338734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1757f20233%3A0xfe4b0c42f3814072!2sLabel+Bulles+%26+Pile+et+Face!5e0!3m2!1sfr!2sfr!4v1557487747710!5m2!1sfr!2sfr"
+          width="250" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <hr class="text-center" id="bigsepafoot">
+      </div>
+      <div class="col-md-4 mb-md-0 mb-3 bg-danger text-center text-white" id="Contactfoot">
+        <h2>Label bulles & pile et face</h2>
+        <hr class="" id="bigsepafoot">
+        <p><i class="fa fa-map-marker fa-1x" aria-hidden="true" id="fafa"></i>76 Avenue René Coty, 76600 Le Havre</p>
+        <hr class="" id="sepafoot">
+        <p> <i class="fa fa-at fa-1x" aria-hidden="true" id="fafa"></i>canalbd.net</p>
+        <hr class="" id="sepafoot">
+        <p><i class="fa fa-mobile fa-1x" aria-hidden="true" id="fafa"></i>02 35 21 16 38</p>
+        <hr class="" id="sepafoot">
+      </div>
+      <div class="col-md-4 mb-md-0 mb-3 bg-danger text-center text-white" id="Contactfoot">
+        <h2>Suivez nous!</h2>
+        <hr class="" id="bigsepafoot">
+        <ul class="fa-ul">
+          <p><i class="fab fa-facebook fa-3x" id="fafa2"></i>FACEBOOK</p>
+          <hr class="" id="sepafoot">
+          <p><i class="fab fa-twitter-square fa-3x" id="fafa2"></i> TWITTER</p>
+          <hr class="" id="sepafoot">
+          <p><i class="fab fa-google fa-3x" id="fafa2"></i>GOOGLE</p>
+        </ul>
+
+      </div>
+    </div>
+    <div class=" bg-danger text-center text-white " id="divmlegal">
+      <h2 class="mention">Horaires</2>
+        <hr class="" id="bigsepafoot">
+        <p class="mention2">14h-19h du Mardi au Samedi : 10h-19h fermé le Dimanche </p>
+        <hr id="bigsepafoot">
+        <!-- <h2 ng-click="showLegalNotice()" class="mention">Mentions légales</h2> -->
+        <h2 class="mention"><a class="text-decoration-none text-white" data-toggle="collapse" href="#paragraphMentions"
+            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Mentions légales</a></h2>
+        <hr id="bigsepafoot">
+        <p class="mention2 collapse" id="paragraphMentions">Conformément aux dispositions de la loi n° 2004-575 du 21
+          juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site
+          LabelBulle&Pileface.fr l'identité des
+          différents intervenants dans le cadre de
+          sa réalisation et de son suivi.
+          Edition du site
+          Le site LabelBulle&Pileface.fr est édité par la société LabelBulle&Pileface, société par actions simplifiée au
+          capital de 10.051,50 euros, dont le siège social est situé 7 rue Marcel troptit, 76600 Le Havre, immatriculée
+          au registre du
+          commerce
+          et des sociétés sous le numéro d’identification unique 814 543 785 RCS Rouen.
+          Responsable de publication
+          PATOU labinocle
+          Hébergeur
+          Le site LabelBulle&Pileface.fr est hébergé par la société LesBulleurs Inc.
+          Adresse: 23 place de la geekerie, Rouen, 76600, France
+          Téléphone: +33 625 951 287
+          Le stockage des données personnelles des Utilisateurs est exclusivement réalisé sur les centre de données
+          ("clusters") localisés dans des Etats membres de l'Union Européenne de la société LabelBulle&Pileface.
+          Nous contacter
+          Par email : support@LabelBulle&Pileface.fr
+          CNIL
+          La société LabelBulle&Pileface conservera dans ses systèmes informatiques et dans des conditions raisonnables
+          de sécurité une preuve de la transaction comprenant le bon de commande et la facture.
+          La société LabelBulle&Pileface a fait l’objet d’une déclaration à la CNIL sous le numéro 1986932.
+          Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’Utilisateur dispose d'un droit
+          d'accès, de modification et de suppression des informations collectées par LabelBulle&Pileface. Pour exercer
+          ce droit, il reviendra à
+          l’Utilisateur d'envoyer un message à l'adresse suivante : support@LabelBulle&Pileface.fr</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<h1 class="Selection text-center banSelect"> Notre Séléction de la semaine</h1>
+<div class="row mx-auto ">
+  <!-- Début de la Section Sélection --->
+
+  <div class="card-group col-8 col-sm-12 col-md-8 col-lg-8--> mx-auto">
+    <div class="card">
+      <img src="Img/SupermanGodfall.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title  Selection2">Superman Godfall</h5>
+
+        <p class="card-text descripselect">Patrick vous propose ce magnifique album de Superman car il aime beaucoup les costumes moulants !!</p>
+        <div class="Modals mx-auto text-center">
+          <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#supermanModals"><b>Détail</b></button>
+        </div>
+
+        <div class="modal fade" id="supermanModals" tabindex="-1" role="dialog" aria-labelledby="supermanModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content modalBook">
+              <div class="modal-header border-bottom-0 text-light">
+                <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Metropolis a été victime de la proverbiale lutte, récemment
+                    restaurée pour retrouver son lustre naturel en tant que ville de demain. Mais son protecteur, Superman, est porté disparu et sa population, y compris sa femme, Lois Lane, ne sait pas où il se trouve. D'une manière ou d'une autre,
+                    l'homme d'acier se retrouve dans son monde natal, le Krypton, avec l'émergence de nouveaux pouvoirs. De quoi est accusé Kal-El et comment peut-il s'en sortir vivant et retrouver son chemin vers la Terre?</span></p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image text-dark">
+                  <thead>
+                    <tr class="text-center text-dark">
+                      <th scope="col" id="descripprod" class="text-center text-danger">Nom du produit</th>
+                      <th scope="col" id="descripprod" class="text-center text-danger">Référence</th>
+                      <th scope="col" id="descripprod" class="text-center text-danger">Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" id="descripprod">{{articles[0].name}}</td>
+                      <td class="text-center" id="descripprod">{{articles[0].ref}}</td>
+                      <td class="text-center" id="descripprod">{{articles[0].price}}€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center">
+                  <img src="Img/SupermanGodfall.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-danger text-white" id="closeto" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-success text-white" id="addto" ng-click="pushItem(articles[0])">Ajoute au panier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Img/uqHolder.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title  Selection2" class="Selection">UQ Holder</h5>
+
+        <p class="card-text descripselect">Premier tome de ce Manga à succès. Ainsi commence les aventures de Tōta dans le monde des êtres immortels dans une organisation où la magie et la technologie sont très avancées au point d’être presque
+          indiscernables.</p>
+        <div class="Modals mx-auto text-center">
+          <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#uqHolderModals"><b>Détail</b></button>
+        </div>
+        <div class="modal fade" id="uqHolderModals" tabindex="-1" role="dialog" aria-labelledby="uqHolderModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content modalBook">
+              <div class="modal-header border-bottom-0 text-light">
+                <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">L'histoire prend place en 2086, dix ans après que la magie a été
+                    révélée au monde. Tōta Konoe est un jeune garçon qui a toujours rêvé de quitter son village natal et de découvrir ce qui se trouve au sommet de l'énorme tour de la capitale, mais son professeur et gardien Yukihime affirme qu'il ne
+                    sera possible qu'une fois qu'il l'aura battu, un exploit qui lui semble impossible. Cependant, une fois Tōta mortellement blessé par un ennemi qui en a après Yukihime, celle-ci se révèle être un vampire et lui sauve la vie en le
+                    transformant en un membre de son espèce. Ainsi commence les aventures de Tōta dans le monde des êtres immortels dans une organisation où la magie et la technologie sont très avancées au point d’être presque indiscernables.</span>
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image text-dark">
+                  <thead>
+                    <tr class="text-center text-danger">
+                      <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                      <th scope="col" class="text-center" id="descripprod">Référence</th>
+                      <th scope="col" class="text-center" id="descripprod">Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" id="descripprod">{{articles[7].name}}</td>
+                      <td class="text-center" id="descripprod">{{articles[7].ref}}</td>
+                      <td class="text-center" id="descripprod">{{articles[7].price}}€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center">
+                  <img src="Img/uqHolder.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+                <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[7])" id="addto">Ajoute au panier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Img/Injustice.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  Selection2" class="Selection">Injustice</h5>
+        <p class="card-text descripselect">Quand le joker décide de s'en prendre à superman le poussant à commettre l'impensable et à s'autoproclamer souverain implacable de la Terre.</p>
+        <div class="Modals mx-auto text-center">
+          <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#injusticeModals"><b>Détail</b></button>
+        </div>
+
+        <div class="modal fade" id="injusticeModals" tabindex="-1" role="dialog" aria-labelledby="injusticeModals" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content modalBook">
+              <div class="modal-header border-bottom-0 text-light">
+                <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Mais quand le Joker décide de s'en prendre à Superman, le poussant
+                    à commettre l'impensable et à s'autoproclamer souverain implacable de la Terre, s'en est trop pour elle. Elle rejoint alors la résistance aux côtés de héros menés par Batman, que sa présence plaise ou non. Pour la première fois de
+                    sa vie, l'ancienne psychiatre vit pour elle-même et ses propres idéaux moraux. </span></p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-image text-dark">
+                  <thead>
+                    <tr class="text-center text-danger">
+                      <th scope="col" id="descripprod" class="text-center">Nom du produit</th>
+                      <th scope="col" id="descripprod" class="text-center">Référence</th>
+                      <th scope="col" id="descripprod" class="text-center">Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center" id="descripprod">{{articles[2].name}}</td>
+                      <td class="text-center" id="descripprod">{{articles[2].ref}}</td>
+                      <td class="text-center" id="descripprod">{{articles[2].price}}€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center">
+                  <img src="Img/Injustice.png" class="img-fluid img-thumbnail" alt="Sheep" />
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+                <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[2])" id="addto">Ajoute au panier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Img/batman.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title  Selection2">Batman Dark Knight III</h5>
+        <p class="card-text descripselect">Batman disparaît et Gotham est à nouveau en proie au crime et à la désolation. Mais peu après, la rumeur circule le Chevalier Noir serait de retour.</p>
+        <div class="Modals mx-auto text-center">
+          <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#batmanModals"><b>Détail</b></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="batmanModals" tabindex="-1" role="dialog" aria-labelledby="batmanModals" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content modalBook">
+          <div class="modal-header border-bottom-0 text-light">
+            <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Après avoir remporté une victoire décisive contre le tandem formé par
+                Luthor et Brainiac, Batman disparaît et Gotham est à nouveau en proie au crime et à la désolation. Mais peu après, la rumeur circule le Chevalier Noir serait de retour. Pendant ce temps, Lara, la fille de Superman, appelle le
+                scientifique Ray Palmer au secours de la ville-bouteille de Kandor. </span></p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-image text-dark">
+              <thead>
+                <tr class="text-center text-danger">
+                  <th scope="col" id="descripprod" class="text-center">Nom du produit</th>
+                  <th scope="col" id="descripprod" class="text-center">Référence</th>
+                  <th scope="col" id="descripprod" class="text-center">Prix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center" id="descripprod">{{articles[3].name}}</td>
+                  <td class="text-center" id="descripprod">{{articles[3].ref}}</td>
+                  <td class="text-center" id="descripprod">{{articles[3].price}}€</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <img src="Img/batman.png" class="img-fluid img-thumbnail" alt="Sheep" />
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-flex justify-content-between">
+            <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+            <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[3])" id="addto">Ajoute au panier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Fin de la Section Sélection --->
+
+
+<hr style="height:3px; width:45%;" class="bg-danger yellowLine">
+
+
+
+
+<!-- Début de la Section événement --->
+
+
+<div class="row ">
+  <h1 class="Selection text-center banSelect2">Evénement</h1>
+  <div class="row mx-auto ">
+    <div class="col-8 mx-auto text-center  anouImg">
+      <a href="https://www.youtube.com/watch?v=hlM0-0CweNk" target="_blank"><img src="Img/anousoneImg.jpg" class="img-fluid mt-3" /></a>
+      <p class="h6 mt-2"><b><i>ÉVÈNEMENT EXCEPTIONNEL DANS VOTRE MAGASIN LABEL BULLES</i></b></p>
+      <p>Le célèbre mangaka auteur de la série Hentai "Le codeur", avec comme titre phare "La grosse cliqueuse","Le Commit-Out", "Angule moi" ou encore "Le git Tub" sera dans votre boutique pour une série de dédicace le 15 mai 2019 à partir de 20h30!
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Fin de la Section événement --->
+
+<!-- Début de la Section Icone --->
+<h1 class=" text-center Selection banSelect2">Nos services</h1>
+
+<div id="IconSection" class="row mx-auto align-items-center">
+
+  <div class="col-12 col-sm-6 col-md-4  align-middle text-center">
+    <i class="far fa-credit-card fa-5x iconHome"></i>
+    <p class="titreIcon">Payement sécurisé</p>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4  align-middle text-center">
+    <i class="fas fa-gift fa-5x iconHome"></i>
+    <p class="titreIcon">Offrez nos cartes cadeaux</p>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4  align-middle text-center">
+    <i class="far fa-check-circle fa-5x iconHome"></i>
+    <p class="titreIcon">Disponible en 24h&nbsp/&nbspretrait en magasin</p>
+  </div>
+</div>
+<!-- Fin de la Section Icone --->
+
+<hr style="height:3px; width:45%;" class="bg-danger RedLine">
+<h1 class=" text-center Selection banSelect2">Découvrez-Nous</h1>
+<div class="row ">
+
+
+  <div class="col-6 text-center mb-3 mt-3 mx-auto">
+    <div class="boutique">
+      <a href="https://www.google.com/maps/uv?hl=fr&pb=!1s0x47e02f1757f20233%3A0xfe4b0c42f3814072!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPaxV1hMSqGm3A_aT_yMO6ad0eaxXXOSnnyBqSP%3Dw240-h160-k-no!5slabel%20bulles%20-%20Recherche%20Google!15sCAQ&imagekey=!1e10!2sAF1QipPaxV1hMSqGm3A_aT_yMO6ad0eaxXXOSnnyBqSP&sa=X&ved=2ahUKEwjWl6GHk5jiAhULXRoKHZnrBncQoiowDnoECA4QBg"
+        target="_blank"><img src="Img/labelBullesMagasin.jpg" class="img-fluid imgBoutique w-75" alt=""></a>
+      <h5 id="visitLink" class="font-weight-bold m-4 "> Cliquez sur l'image pour visiter la boutique</h4>
+    </div>
+  </div>
+</div>

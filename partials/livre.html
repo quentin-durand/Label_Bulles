@@ -1,0 +1,392 @@
+<H1 class="text-center text-danger" id="livres">Manga / Comics</h1>
+<div class="row">
+  <!--Début de la premiere ligne d'article -->
+
+  <!-- Premier article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#supermanModals"><img src="Img/SupermanGodfall.jpg" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Superman God Fall</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#supermanModals"><b>Détail</b></button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="supermanModals" tabindex="-1" role="dialog" aria-labelledby="supermanModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Metropolis a été victime de la proverbiale lutte, récemment restaurée
+              pour retrouver son lustre naturel en tant que ville de demain. Mais son protecteur, Superman, est porté disparu et sa population, y compris sa femme, Lois Lane, ne sait pas où il se trouve. D'une manière ou d'une autre, l'homme d'acier
+              se retrouve dans son monde natal, le Krypton, avec l'émergence de nouveaux pouvoirs. De quoi est accusé Kal-El et comment peut-il s'en sortir vivant et retrouver son chemin vers la Terre?</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-dark">
+                <th scope="col" id="descripprod" class="text-center text-danger">Nom du produit</th>
+                <th scope="col" id="descripprod" class="text-center text-danger">Référence</th>
+                <th scope="col" id="descripprod" class="text-center text-danger">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[0].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[0].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[0].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/SupermanGodfall.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" id="closeto" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-success text-white" id="addto" ng-click="pushItem(articles[0])">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Fin Premier article -->
+  <!-- Début Deuxieme article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#thorModals"><img src="Img/Thor.jpg" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Thor contre Flysurf</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#thorModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="thorModals" tabindex="-1" role="dialog" aria-labelledby="thorModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Le surfer d'argent doit affronter Thor une divinité et un super-héros
+              évoluant dans l'univers Marvel. lequels de nos deux heros obtiendra la victoire?</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" id="descripprod" class="text-center">Nom du produit</th>
+                <th scope="col" id="descripprod" class="text-center">Référence</th>
+                <th scope="col" id="descripprod" class="text-center">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[1].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[1].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[1].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Thor.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" id="closeto" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-success text-white" id="addto" ng-click="pushItem(articles[1])">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#injusticeModals"><img src="Img/Injustice.png" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Injuste Ground Zero</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#injusticeModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <!-- Fin Deuxieme article -->
+  <!-- Début troisième article -->
+  <div class="modal fade" id="injusticeModals" tabindex="-1" role="dialog" aria-labelledby="injusticeModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Mais quand le Joker décide de s'en prendre à Superman, le poussant à
+              commettre l'impensable et à s'autoproclamer souverain implacable de la Terre, s'en est trop pour elle. Elle rejoint alors la résistance aux côtés de héros menés par Batman, que sa présence plaise ou non. Pour la première fois de sa vie,
+              l'ancienne psychiatre vit pour elle-même et ses propres idéaux moraux. </span></p>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" id="descripprod" class="text-center">Nom du produit</th>
+                <th scope="col" id="descripprod" class="text-center">Référence</th>
+                <th scope="col" id="descripprod" class="text-center">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[2].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[2].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[2].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Injustice.png" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[2])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin troisième article -->
+  <!-- Début quatrième article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#batmanModals"><img src="Img/batman.png" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Batman Dark Knight III</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#batmanModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="batmanModals" tabindex="-1" role="dialog" aria-labelledby="batmanModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Après avoir remporté une victoire décisive contre le tandem formé par
+              Luthor et Brainiac, Batman disparaît et Gotham est à nouveau en proie au crime et à la désolation. Mais peu après, la rumeur circule le Chevalier Noir serait de retour. Pendant ce temps, Lara, la fille de Superman, appelle le
+              scientifique Ray Palmer au secours de la ville-bouteille de Kandor. </span></p>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" id="descripprod" class="text-center">Nom du produit</th>
+                <th scope="col" id="descripprod" class="text-center">Référence</th>
+                <th scope="col" id="descripprod" class="text-center">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[3].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[3].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[3].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/batman.png" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[3])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin quatrième article -->
+</div> <!-- Fin de la première ligne -->
+<hr style="height:2px; width:45%;" class="yellowLine">
+<div class="row mb-3">
+  <!-- Début de la deuxième ligne -->
+  <!-- Début premier article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#blackCloverModals"><img src="Img/blackClover.png" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Black Clover</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#blackCloverModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="blackCloverModals" tabindex="-1" role="dialog" aria-labelledby="blackCloverModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Dans un monde régi par la magie, Yuno et Asta ont grandi ensemble avec
+              un seul but en tête : devenir le prochain Empereur-Mage du royaume de Clover. </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[4].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[4].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[4].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/blackClover.png" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[4])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin premier article -->
+
+  <!-- Début deuxième article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#fairyTailModals"><img src="Img/fairyTail.png" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Fairy Tail</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#fairyTailModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="fairyTailModals" tabindex="-1" role="dialog" aria-labelledby="fairyTailModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Dans le royaume de Fiore, il existe parmi le commun des mortels des
+              hommes et des femmes qui
+              manipulent la magie : ils sont appelés mages.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[5].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[5].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[5].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/fairyTail.png" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[5])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin deuxième article -->
+  <!-- Début troisième article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#radiantModals"><img src="Img/radiant.jpg" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>Radiant et les radiateurs</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#radiantModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="radiantModals" tabindex="-1" role="dialog" aria-labelledby="radiantModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">Dans un univers fantastique, des monstres, appelés Némésis, tombent du
+              ciel. L'origine de ces monstres reste inconnue, mais une chose est sûre, ils ne sont pas là pour notre bien ! Heureusement, des hommes et des femmes organisent la lutte contre ces Némésis. Ces individus sont des infectés rejetés par la
+              société et bien souvent aussi craints que les créatures elles-mêmes. Ils représentent pourtant le seul et unique rempart contre cette menace. Ce sont les sorciers.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[6].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[6].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[6].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/radiant.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[6])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin troisième article -->
+  <!-- Début quatrième article -->
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#uqHolderModals"><img src="Img/uqHolder.jpg" /></a>
+      <p class="h4 mt-2 titleBook" id="titleBook"><b>UQ Holder</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#uqHolderModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="uqHolderModals" tabindex="-1" role="dialog" aria-labelledby="uqHolderModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descritpionBook text-dark" id="synopsis">L'histoire prend place en 2086, dix ans après que la magie a été révélée
+              au monde. Tōta Konoe est un jeune garçon qui a toujours rêvé de quitter son village natal et de découvrir ce qui se trouve au sommet de l'énorme tour de la capitale, mais son professeur et gardien Yukihime affirme qu'il ne sera possible
+              qu'une fois qu'il l'aura battu, un exploit qui lui semble impossible. Cependant, une fois Tōta mortellement blessé par un ennemi qui en a après Yukihime, celle-ci se révèle être un vampire et lui sauve la vie en le transformant en un
+              membre de son espèce. Ainsi commence les aventures de Tōta dans le monde des êtres immortels dans une organisation où la magie et la technologie sont très avancées au point d’être presque indiscernables.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[7].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[7].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[7].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/uqHolder.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[7])" id="addto">Ajoute au panier</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Début quatrième article -->
+</div><!-- Fin de la deuxième ligne d'article -->
+</span>
+<!-- FIN LIVRE  -->

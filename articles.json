@@ -1,0 +1,193 @@
+[{
+    "id": 0,
+    "image":"./Img/SupermanGodfall.jpg",
+    "name": "Superman",
+    "ref": 101,
+    "price": 14.99,
+    "qty": 1
+  },
+  {
+    "id": 1,
+    "image":"./Img/Thor.jpg",
+    "name": "Thor",
+    "ref": 202,
+    "price": 12.99,
+    "qty": 1
+  },
+  {
+    "id": 2,
+    "image":"./Img/Injustice.png",
+    "name": "Injustice",
+    "ref": 303,
+    "price": 19.99,
+    "qty": 1
+  },
+  {
+    "id": 3,
+    "image":"./Img/batman.png",
+    "name": "Batman : Dark Knight III",
+    "ref": 404,
+    "price": 14.99,
+    "qty": 1
+  },
+  {
+    "id": 4,
+    "image":"./Img/blackClover.png",
+    "name": "Black Clover",
+    "ref": 505,
+    "price": 10.99,
+    "qty": 1
+  },
+  {
+    "id": 5,
+    "image":"./Img/fairyTail.png",
+    "name": "FairyTail",
+    "ref": 606,
+    "price": 11.99,
+    "qty": 1
+  },
+  {
+    "id": 6,
+    "image":"./Img/radiant.jpg",
+    "name": "Radiant",
+    "ref": 707,
+    "price": 18.99,
+    "qty": 1
+  },
+  {
+    "id": 7,
+    "image":"./Img/uqHolder.jpg",
+    "name": "UQHolder",
+    "ref": 808,
+    "price": 15.99,
+    "qty": 1
+  },
+  {
+    "id": 8,
+    "image":"./Img/7Wonders.jpg",
+    "name": "7 Wonders",
+    "ref": 909,
+    "price": 20.99,
+    "qty": 1
+  },
+  {
+    "id": 9,
+    "image":"./Img/Chabyrinthe.jpg",
+    "name": "Chabyrinthe",
+    "ref": 1010,
+    "price": 30.99,
+    "qty": 1
+  },
+  {
+    "id": 1,
+    "image":"./Img/Dixit.jpg",
+    "name": "Dixit",
+    "ref": 1111,
+    "price": 19.99,
+    "qty": 1
+  },
+  {
+    "id": 11,
+    "image":"./Img/CodeNames.jpg",
+    "name": "CodeNames",
+    "ref": 1212,
+    "price": 16.99,
+    "qty": 1
+  },
+  {
+    "id": 12,
+    "image":"./Img/LimiteLimiteGold.jpg",
+    "name": "LimiteLimite",
+    "ref": 1313,
+    "price": 14.99,
+    "qty": 1
+  },
+  {
+    "id": 13,
+    "image":"./Img/MonopolyGOT.jpg",
+    "name": "MonopolyGOT",
+    "ref": 1414,
+    "price": 40.99,
+    "qty": 1
+  },
+  {
+    "id": 14,
+    "image":"./Img/Mysterium.jpg",
+    "name": "Mysterium",
+    "ref": 1515,
+    "price": 13.99,
+    "qty": 1
+  },
+  {
+    "id": 15,
+    "image":"./Img/Smallworld.jpg",
+    "name": "Smallworld",
+    "ref": 1616,
+    "price": 12.99,
+    "qty": 1
+  },
+  {
+    "id": 16,
+    "image":"./Img/batmanFigurine.jpeg",
+    "name": "Batman Figurine",
+    "ref": 1717,
+    "price": 50.99,
+    "qty": 1
+  },
+  {
+    "id": 17,
+    "image":"./Img/harleyQuinn.jpg",
+    "name": "Harley Quinn Figurine",
+    "ref": 1818,
+    "price": 80.99,
+    "qty": 1
+  },
+  {
+    "id": 18,
+    "image":"./Img/deadpoolUnicorne.jpeg",
+    "name": "Deadpool Unicorn Figurine",
+    "ref": 1919,
+    "price": 12.99,
+    "qty": 1
+  },
+  {
+    "id": 19,
+    "image":"./Img/hulkFigurine.jpg",
+    "name": "Hulk Figurine",
+    "ref": 2000,
+    "price": 40.99,
+    "qty": 1
+  },
+  {
+    "id": 20,
+    "image":"./Img/whiteWalker.jpg",
+    "name": "White Walker Figurine",
+    "ref": 2101,
+    "price": 50.99,
+    "qty": 1
+  },
+  {
+    "id": 21,
+    "image":"./Img/jokerFigurine.jpg",
+    "name": "Joker Figurine",
+    "ref": 2202,
+    "price": 12.99,
+    "qty": 1
+  },
+  {
+    "id": 22,
+    "image":"./Img/fullMetal.jpg",
+    "name": "Full Metal Figurine",
+    "ref": 2303,
+    "price": 20.99,
+    "qty": 1
+  },
+  {
+    "id": 23,
+    "image":"./Img/Naruto.jpg",
+    "name": "Naruto Figurine",
+    "ref": 2404,
+    "price": 23.99,
+    "qty": 1
+  }
+]

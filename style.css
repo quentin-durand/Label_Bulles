@@ -1,0 +1,297 @@
+/*banniere*/
+img.fondecran {
+ /* On met en place le fond d'écran */
+
+ width: 100vw;
+ top: 0;
+ left: 0;
+}
+@media screen and (max-width: 1287px) { /* Le traitement est ici spécifique à l'image */
+ img.fondecran {
+ left: 50%;
+ margin-left:auto; /* 50% */
+ }
+}
+/*fin banniere*/
+/*navbar*/
+#Logo{
+  margin-right: 1rem;
+  width: 5rem;
+  height: 3rem;
+}
+
+.banSelect{
+  border-top-right-radius: 1em 1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: static;
+  width: 30rem;
+  background-color: #fcbc5e;
+}
+.banSelect2{
+  border-top-right-radius: 1em 1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: static;
+  width: 20rem;
+  background-color: #fcbc5e;
+}
+#liste{
+  font-family: 'Baloo Bhai', cursive;
+  color:  #fcbc5e;
+}
+a:hover{
+  font-family: 'Baloo Bhai', cursive;
+  color:  red;
+}
+
+#navbarDropdownMenuLink{
+  border-radius: 0.3rem;
+  background-color: #fcbc5e;
+}
+#btnlog{
+font-family: 'Baloo Bhai', cursive;
+background-color:  #fcbc5e;
+
+}
+#Rubriques{
+/* background-color: #fcbc5e; */
+}
+#exampleModalScrollableTitle{
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#navbarDropdownMenuLink{
+  font-family: 'Baloo Bhai', cursive;
+}
+#valid{
+    font-family: 'Baloo Bhai', cursive;
+}
+#close{
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#LogoPanier{
+  margin-left: 0.5rem;
+  float: right;
+  height: 3rem;
+  width:  3rem;
+}
+
+.Colorbutton{
+  background-color: rgba(#fbfbfb, 0.01);
+}
+#Searchbtn{
+  font-family: 'Baloo Bhai', cursive;
+  /* margin-left: 0.5rem; */
+
+
+}
+
+.modal-header{
+  background-color: #fcbc5e;
+}
+
+.modal-footer{
+background-color: #fcbc5e;
+}
+
+.Submitbtn{
+  border-radius: 1rem;
+  background-color: #fcbc5e;
+}
+
+#buttonIcon{
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  width: 4rem;
+}
+/*fin navbar*/
+/*Articles*/
+#titleBook{
+    font-family: 'Righteous', cursive;
+}
+
+.rezizeimg{
+  width: 80%;
+  height: 80%;
+}
+.btnModalsAcceuil{
+font-family: 'Baloo Bhai', cursive;
+background-color: #fcbc5e;
+color:#dc3545;
+}
+
+
+#livres{
+  font-size: 2rem;
+  border-top-right-radius: 1em 1em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: static;
+  width: 20rem;
+  background-color: #fcbc5e;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#games{
+  font-size: 2rem;
+  border-top-right-radius: 1em 1em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: static;
+  width: 20rem;
+  background-color: #fcbc5e;
+  font-family: 'Baloo Bhai', cursive;
+}
+#goodies{
+  font-size: 2rem;
+  border-top-right-radius: 1em 1em;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: static;
+  width: 20rem;
+  background-color: #fcbc5e;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#synopsis{
+  font-size: 1rem;
+}
+
+#descripprod{
+font-family: 'Baloo Bhai', cursive;
+}
+#exampleModalLabel{
+  font-family: 'Baloo Bhai', cursive;
+
+}
+
+#closeto{
+font-family: 'Baloo Bhai', cursive;
+}
+
+#addto{
+  font-family: 'Baloo Bhai', cursive;
+
+}
+/*fin articles*/
+/*footer*/
+#footer{
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+#map{
+  border-radius: 50%;
+}
+#titrefoot{
+  font-size: 2rem;
+}
+#Contactfoot{
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-family: 'Baloo Bhai', cursive;
+  padding-top: 2rem;
+}
+
+#bigsepafoot{
+  height: 0.1rem;
+  background-color: #fcbc5e;
+  width: 15rem;
+}
+
+#sepafoot{
+  height: 0.1rem;
+  background-color: #fcbc5e;
+  width: 10rem;
+}
+
+#fafa{
+  margin-right: 0.5rem;
+}
+
+#fafa2{
+
+  margin-right: 0.5rem;
+}
+
+#reseausoc{
+  margin-right: 0.5rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+#divmlegal{
+  padding-top: 1rem;
+}
+.mention{
+  margin-top: 1rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.mention2{
+  font-size: 1rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+/*fin footer*/
+.Selection2{
+  color:#dc3545;
+  font-size: 1.5rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+.descripselect{
+  font-family: 'Baloo Bhai', cursive;
+
+}
+.Selection{
+  color:#dc3545;
+  font-size: 2rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+#blocSelection{
+  border: solid 1px #fcbc5e ;
+}
+
+#inputQty {
+  width:  70px;
+}
+
+.iconHome{
+  margin-left: auto;
+     margin-right: auto;
+  padding-top: 2rem;
+  color:#fcbc5e;
+}
+
+#IconSection{
+height: 50vh;
+}
+.RedLine{
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  background-color:#fcbc5e;
+}
+.yellowLine{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color:#fcbc5e;
+}
+.titreIcon{
+font-family: 'Baloo Bhai', cursive;
+}
+
+.cartText  {
+
+  font-family: 'Baloo Bhai', cursive;
+}
+
+.imgBoutique {
+  border: 4px solid #fcbc5e;
+}
+
+.anouImg {
+  border: 4px solid #fcbc5e;
+  font-family: 'Baloo Bhai', cursive;
+}
+#visitLink{
+    font-family: 'Baloo Bhai', cursive;
+      color:#dc3545;
+}

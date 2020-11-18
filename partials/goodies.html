@@ -1,0 +1,364 @@
+<h1 class="text-center text-danger" id="goodies">Goodies</h1>
+<div class="row">
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#batmanFigurineModals"><img src="Img/batmanFigurine.jpeg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Batman</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#batmanFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="batmanFigurineModals" tabindex="-1" role="dialog" aria-labelledby="batmanFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">League Movie MAF EX Batman 16cm, les figurines Schleich sont toutes
+              modélisées en détail et soigneusement peintes à la main.Figurine Justice </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[16].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[16].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[16].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/batmanFigurine.jpeg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[16])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#harleyQuinnModals"><img src="Img/harleyQuinn.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Harley Quinn</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#harleyQuinnModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="harleyQuinnModals" tabindex="-1" role="dialog" aria-labelledby="harleyQuinnModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">DC SUPER HERO GIRLS - Harley Quinn - Figurine 15 CM articulée (coudes
+              et genoux). Elle porte sa tenue emblématique, son top blanc à losanges bleu et rouge, son shorty bleu, ses couettes et son masque </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[17].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[17].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[17].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/harleyQuinn.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[17])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#deadpoolFigurineModals"><img src="Img/deadpoolUnicorne.jpeg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Deadpool</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#deadpoolFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="deadpoolFigurineModals" tabindex="-1" role="dialog" aria-labelledby="deadpoolFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">Notre super héros déjanté préféré est de retour sur un tout nouveau
+              format! Il s'agit de la version mini de la célèbre gamme Egg Attack, le même chara-design mais sans articulations. </span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[18].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[18].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[18].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/deadpoolUnicorne.jpeg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[18])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#hulkFigurineModals"><img src="Img/hulkFigurine.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Hulk</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#hulkFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="hulkFigurineModals" tabindex="-1" role="dialog" aria-labelledby="hulkFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">Ajoutez cette Figurine Pop! Marvel Avengers Endgame Hulk à votre
+              collection!</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[19].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[19].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[19].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/hulkFigurine.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[19])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr style="height:2px; width:45%;" class="yellowLine">
+<div class="row mb-3">
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#WhiteWalkerFigurineModals"><img src="Img/whiteWalker.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine White Walker</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#WhiteWalkerFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="WhiteWalkerFigurineModals" tabindex="-1" role="dialog" aria-labelledby="WhiteWalkerFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">Serie de figurines Articulées sur la série TV Game of Thrones.Modèle
+              White Walker, série 1, Mesure 15cm</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-danger">
+            <thead>
+              <tr class="text-center text-dark">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[20].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[20].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[20].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/whiteWalker.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[20])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#jokerFigurineModals"><img src="Img/jokerFigurine.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Joker</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#jokerFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="jokerFigurineModals" tabindex="-1" role="dialog" aria-labelledby="jokerFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">Batman: Arkham Origins figurine 26cm Joker PVC</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[21].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[21].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[21].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/jokerFigurine.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[21])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#fullMetalModals"><img src="Img/fullMetal.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Full Metal</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#fullMetalModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="fullMetalModals" tabindex="-1" role="dialog" aria-labelledby="fullMetalModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalGoodies">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis"> Figurine Fullmetal Alchemist Edward ulrich en resine, taille
+              18cm.</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-dark">
+            <thead>
+              <tr class="text-center text-danger">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[22].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[22].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[22].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/fullMetal.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[22])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-xl-3 col-12 mb-3">
+    <div class="Modals mx-auto text-center">
+      <a class="btnModalsAcceuil" data-toggle="modal" data-target="#narutoFigurineModals"><img src="Img/Naruto.jpg" /></a>
+      <p class="h4 mt-2 titleGoodies" id="titleBook"><b>Figurine Naruto</b></p>
+      <button type="button" class="btnModals btn btnModalsAcceuil" data-toggle="modal" data-target="#narutoFigurineModals"><b>Détail</b></button>
+    </div>
+  </div>
+  <div class="modal fade" id="narutoFigurineModals" tabindex="-1" role="dialog" aria-labelledby="narutoFigurineModals" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content modalBook">
+        <div class="modal-header border-bottom-0 text-light">
+          <p class="h5 modal-title text-center text-white" id="exampleModalLabel"><b><u>Description du produit<br /></u></b><span class="descriptionGoodies text-dark" id="synopsis">Figurine Naruto uzumaki 21cm PVC</span></p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image text-danger">
+            <thead>
+              <tr class="text-center text-dark">
+                <th scope="col" class="text-center" id="descripprod">Nom du produit</th>
+                <th scope="col" class="text-center" id="descripprod">Référence</th>
+                <th scope="col" class="text-center" id="descripprod">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center" id="descripprod">{{articles[23].name}}</td>
+                <td class="text-center" id="descripprod">{{articles[23].ref}}</td>
+                <td class="text-center" id="descripprod">{{articles[23].price}}€</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <img src="Img/Naruto.jpg" class="img-fluid img-thumbnail" alt="Sheep" />
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal" id="closeto">Fermer</button>
+          <button type="button" class="btn btn-success text-white" ng-click="pushItem(articles[23])" id="addto">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
